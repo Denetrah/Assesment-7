@@ -61,19 +61,34 @@ console.log('Results for the extraLargeArray');
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
 
+console.log('Results for the largeArray');
+console.log("insert", resultsInsert.preciseWords);
+console.log("append", resultsAppend.preciseWords);
+
+console.log('Results for the mediumArray');
+console.log("insert", resultsInsert.preciseWords);
+console.log("append", resultsAppend.preciseWords);
+
+console.log('Results for the smallArray');
+console.log("insert", resultsInsert.preciseWords);
+console.log("append", resultsAppend.preciseWords);
+
+console.log('Results for the tinyArray');
+console.log("insert", resultsInsert.preciseWords);
+console.log("append", resultsAppend.preciseWords);
 
 // tinyArray results
 
-// insert 17.959 μs
+// insert 1.2959 μs
 
-// append 72.542 μs
+// append 1.245μs
 
 
 
 
 // smallArray results
 
-// insert 24.708 μs
+// insert 43.708 μs
 
 // append 59.375 μs
 
@@ -82,16 +97,16 @@ console.log("append", resultsAppend.preciseWords);
 
 // mediumArray results
 
-// insert 118.5 μs
+// insert 1.328525 ms
 
-// append 87.125 μs
+// append 313.125 μs
 
 
 
 
 // largeArray results
 
-// insert 6.346 ms
+// insert 9.162125 ms
 
 // append 408.584 μs
 
@@ -100,6 +115,9 @@ console.log("append", resultsAppend.preciseWords);
 
 // extraLargeArray results
 
-// insert 767.322 ms
+// insert 1.1172033749999s
 
-// append 2.310208 ms
+// append 4.14875 ms
+
+
+// As our input gets bigger our "doublerappend" is becoming faster and faster making it more efficent than the "doublerinsert". Doublerinsert a few times did turn out to be faster , but this only happened due to the small input size. But either way doublerappend is better for large input.
